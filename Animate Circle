@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/rejal/2/edit
+-->
+<head>
+<script src="http://code.jquery.com/jquery-git2.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+
+<style id="jsbin-css">
+
+</style>
+</head>
+<body>
+<button id="button">
+  Move the Circle
+  </button>
+  <div id="graphics"/>
+<script>
+var width= 400;
+var height= 400;
+var j = [];
+
+var juan = Raphael("graphics",width,height);
+j[1]= juan.circle(22,height/2,22);
+
+function carlos(){
+j[1].animate ({cx:width/2, cy:height},1000,habib);  
+}
+
+function habib(){
+j[1].animate ({cx:width, cy:height/2},1000,ahmed);
+  }
+  
+function ahmed (){
+    j[1].animate ({cx:width/2, cy:height/4},1000,johnny);
+  }
+
+function johnny (){
+    j[1].animate ({cx:23, cy:200},1000,carlos);
+ }
+
+$("#button").click(carlos);
+</script>
+</body>
+</html>
